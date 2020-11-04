@@ -7,14 +7,33 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		935ED99A255335920043B8C4 /* BeersCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935ED999255335920043B8C4 /* BeersCoordinator.swift */; };
+		935ED99F255335C90043B8C4 /* CategoriesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935ED99E255335C90043B8C4 /* CategoriesViewModel.swift */; };
+		935ED9A1255335D40043B8C4 /* CategoriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935ED9A0255335D40043B8C4 /* CategoriesViewController.swift */; };
+		935ED9A3255335E00043B8C4 /* CategoriesDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935ED9A2255335E00043B8C4 /* CategoriesDataManager.swift */; };
+		935ED9A5255335F20043B8C4 /* BeersViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935ED9A4255335F20043B8C4 /* BeersViewModel.swift */; };
+		935ED9A7255336010043B8C4 /* BeersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935ED9A6255336010043B8C4 /* BeersViewController.swift */; };
+		935ED9A92553360C0043B8C4 /* BeersDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935ED9A82553360C0043B8C4 /* BeersDataManager.swift */; };
+		935ED9AB255336280043B8C4 /* BeerDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935ED9AA255336280043B8C4 /* BeerDetailViewModel.swift */; };
+		935ED9AD255336330043B8C4 /* BeerDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935ED9AC255336330043B8C4 /* BeerDetailViewController.swift */; };
+		935ED9AF255336410043B8C4 /* BeerDetailDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935ED9AE255336410043B8C4 /* BeerDetailDataManager.swift */; };
+		935ED9B225533BD10043B8C4 /* FavouritesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935ED9B125533BD10043B8C4 /* FavouritesViewModel.swift */; };
+		935ED9B425533BDF0043B8C4 /* FavouritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935ED9B325533BDF0043B8C4 /* FavouritesViewController.swift */; };
+		935ED9B625533BEA0043B8C4 /* FavouritesDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935ED9B525533BEA0043B8C4 /* FavouritesDataManager.swift */; };
+		935ED9B825533C040043B8C4 /* FavouritesCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935ED9B725533C040043B8C4 /* FavouritesCoordinator.swift */; };
 		93EE319E2553315800A5B8C5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93EE319D2553315800A5B8C5 /* AppDelegate.swift */; };
 		93EE31A02553315800A5B8C5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93EE319F2553315800A5B8C5 /* SceneDelegate.swift */; };
-		93EE31A22553315800A5B8C5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93EE31A12553315800A5B8C5 /* ViewController.swift */; };
-		93EE31A52553315800A5B8C5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93EE31A32553315800A5B8C5 /* Main.storyboard */; };
 		93EE31A82553315800A5B8C5 /* CervezApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 93EE31A62553315800A5B8C5 /* CervezApp.xcdatamodeld */; };
 		93EE31AA2553315A00A5B8C5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 93EE31A92553315A00A5B8C5 /* Assets.xcassets */; };
 		93EE31AD2553315A00A5B8C5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93EE31AB2553315A00A5B8C5 /* LaunchScreen.storyboard */; };
 		93EE31B82553315B00A5B8C5 /* CervezAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93EE31B72553315B00A5B8C5 /* CervezAppTests.swift */; };
+		93EE31C42553324000A5B8C5 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93EE31C32553324000A5B8C5 /* Coordinator.swift */; };
+		93EE31C62553326600A5B8C5 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93EE31C52553326600A5B8C5 /* AppCoordinator.swift */; };
+		93EE31CD255332DF00A5B8C5 /* RemoteDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93EE31CC255332DF00A5B8C5 /* RemoteDataManager.swift */; };
+		93EE31CF255332EA00A5B8C5 /* RemoteDataManagerImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93EE31CE255332EA00A5B8C5 /* RemoteDataManagerImpl.swift */; };
+		93EE31D1255332F500A5B8C5 /* LocalDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93EE31D0255332F500A5B8C5 /* LocalDataManager.swift */; };
+		93EE31D3255332FE00A5B8C5 /* LocalDataManagerImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93EE31D2255332FE00A5B8C5 /* LocalDataManagerImpl.swift */; };
+		93EE31D52553333E00A5B8C5 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93EE31D42553333E00A5B8C5 /* DataManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,11 +47,23 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		935ED999255335920043B8C4 /* BeersCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeersCoordinator.swift; sourceTree = "<group>"; };
+		935ED99E255335C90043B8C4 /* CategoriesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesViewModel.swift; sourceTree = "<group>"; };
+		935ED9A0255335D40043B8C4 /* CategoriesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesViewController.swift; sourceTree = "<group>"; };
+		935ED9A2255335E00043B8C4 /* CategoriesDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesDataManager.swift; sourceTree = "<group>"; };
+		935ED9A4255335F20043B8C4 /* BeersViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeersViewModel.swift; sourceTree = "<group>"; };
+		935ED9A6255336010043B8C4 /* BeersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeersViewController.swift; sourceTree = "<group>"; };
+		935ED9A82553360C0043B8C4 /* BeersDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeersDataManager.swift; sourceTree = "<group>"; };
+		935ED9AA255336280043B8C4 /* BeerDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerDetailViewModel.swift; sourceTree = "<group>"; };
+		935ED9AC255336330043B8C4 /* BeerDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerDetailViewController.swift; sourceTree = "<group>"; };
+		935ED9AE255336410043B8C4 /* BeerDetailDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerDetailDataManager.swift; sourceTree = "<group>"; };
+		935ED9B125533BD10043B8C4 /* FavouritesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouritesViewModel.swift; sourceTree = "<group>"; };
+		935ED9B325533BDF0043B8C4 /* FavouritesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouritesViewController.swift; sourceTree = "<group>"; };
+		935ED9B525533BEA0043B8C4 /* FavouritesDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouritesDataManager.swift; sourceTree = "<group>"; };
+		935ED9B725533C040043B8C4 /* FavouritesCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouritesCoordinator.swift; sourceTree = "<group>"; };
 		93EE319A2553315800A5B8C5 /* CervezApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CervezApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		93EE319D2553315800A5B8C5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		93EE319F2553315800A5B8C5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		93EE31A12553315800A5B8C5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		93EE31A42553315800A5B8C5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		93EE31A72553315800A5B8C5 /* CervezApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CervezApp.xcdatamodel; sourceTree = "<group>"; };
 		93EE31A92553315A00A5B8C5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		93EE31AC2553315A00A5B8C5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -40,6 +71,13 @@
 		93EE31B32553315B00A5B8C5 /* CervezAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CervezAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		93EE31B72553315B00A5B8C5 /* CervezAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CervezAppTests.swift; sourceTree = "<group>"; };
 		93EE31B92553315B00A5B8C5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		93EE31C32553324000A5B8C5 /* Coordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		93EE31C52553326600A5B8C5 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		93EE31CC255332DF00A5B8C5 /* RemoteDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteDataManager.swift; sourceTree = "<group>"; };
+		93EE31CE255332EA00A5B8C5 /* RemoteDataManagerImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteDataManagerImpl.swift; sourceTree = "<group>"; };
+		93EE31D0255332F500A5B8C5 /* LocalDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalDataManager.swift; sourceTree = "<group>"; };
+		93EE31D2255332FE00A5B8C5 /* LocalDataManagerImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalDataManagerImpl.swift; sourceTree = "<group>"; };
+		93EE31D42553333E00A5B8C5 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +98,46 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		935ED99B2553359A0043B8C4 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				935ED9A2255335E00043B8C4 /* CategoriesDataManager.swift */,
+				935ED99E255335C90043B8C4 /* CategoriesViewModel.swift */,
+				935ED9A0255335D40043B8C4 /* CategoriesViewController.swift */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		935ED99C255335A90043B8C4 /* Beers */ = {
+			isa = PBXGroup;
+			children = (
+				935ED9A82553360C0043B8C4 /* BeersDataManager.swift */,
+				935ED9A4255335F20043B8C4 /* BeersViewModel.swift */,
+				935ED9A6255336010043B8C4 /* BeersViewController.swift */,
+			);
+			path = Beers;
+			sourceTree = "<group>";
+		};
+		935ED99D255335AE0043B8C4 /* BeerDetail */ = {
+			isa = PBXGroup;
+			children = (
+				935ED9AE255336410043B8C4 /* BeerDetailDataManager.swift */,
+				935ED9AA255336280043B8C4 /* BeerDetailViewModel.swift */,
+				935ED9AC255336330043B8C4 /* BeerDetailViewController.swift */,
+			);
+			path = BeerDetail;
+			sourceTree = "<group>";
+		};
+		935ED9B025533BC00043B8C4 /* Favourites */ = {
+			isa = PBXGroup;
+			children = (
+				935ED9B525533BEA0043B8C4 /* FavouritesDataManager.swift */,
+				935ED9B125533BD10043B8C4 /* FavouritesViewModel.swift */,
+				935ED9B325533BDF0043B8C4 /* FavouritesViewController.swift */,
+			);
+			path = Favourites;
+			sourceTree = "<group>";
+		};
 		93EE31912553315700A5B8C5 = {
 			isa = PBXGroup;
 			children = (
@@ -81,14 +159,11 @@
 		93EE319C2553315800A5B8C5 /* CervezApp */ = {
 			isa = PBXGroup;
 			children = (
-				93EE319D2553315800A5B8C5 /* AppDelegate.swift */,
-				93EE319F2553315800A5B8C5 /* SceneDelegate.swift */,
-				93EE31A12553315800A5B8C5 /* ViewController.swift */,
-				93EE31A32553315800A5B8C5 /* Main.storyboard */,
-				93EE31A92553315A00A5B8C5 /* Assets.xcassets */,
-				93EE31AB2553315A00A5B8C5 /* LaunchScreen.storyboard */,
-				93EE31AE2553315A00A5B8C5 /* Info.plist */,
-				93EE31A62553315800A5B8C5 /* CervezApp.xcdatamodeld */,
+				93EE31C2255331B900A5B8C5 /* AppSupport */,
+				93EE31D62553334F00A5B8C5 /* Model */,
+				93EE31C92553328F00A5B8C5 /* DataManager */,
+				93EE31C82553328500A5B8C5 /* Modules */,
+				93EE31C72553327B00A5B8C5 /* Coordinators */,
 			);
 			path = CervezApp;
 			sourceTree = "<group>";
@@ -100,6 +175,76 @@
 				93EE31B92553315B00A5B8C5 /* Info.plist */,
 			);
 			path = CervezAppTests;
+			sourceTree = "<group>";
+		};
+		93EE31C2255331B900A5B8C5 /* AppSupport */ = {
+			isa = PBXGroup;
+			children = (
+				93EE319D2553315800A5B8C5 /* AppDelegate.swift */,
+				93EE319F2553315800A5B8C5 /* SceneDelegate.swift */,
+				93EE31A92553315A00A5B8C5 /* Assets.xcassets */,
+				93EE31AB2553315A00A5B8C5 /* LaunchScreen.storyboard */,
+				93EE31AE2553315A00A5B8C5 /* Info.plist */,
+			);
+			path = AppSupport;
+			sourceTree = "<group>";
+		};
+		93EE31C72553327B00A5B8C5 /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				93EE31C32553324000A5B8C5 /* Coordinator.swift */,
+				93EE31C52553326600A5B8C5 /* AppCoordinator.swift */,
+				935ED999255335920043B8C4 /* BeersCoordinator.swift */,
+				935ED9B725533C040043B8C4 /* FavouritesCoordinator.swift */,
+			);
+			path = Coordinators;
+			sourceTree = "<group>";
+		};
+		93EE31C82553328500A5B8C5 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				935ED9B025533BC00043B8C4 /* Favourites */,
+				935ED99B2553359A0043B8C4 /* Categories */,
+				935ED99C255335A90043B8C4 /* Beers */,
+				935ED99D255335AE0043B8C4 /* BeerDetail */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		93EE31C92553328F00A5B8C5 /* DataManager */ = {
+			isa = PBXGroup;
+			children = (
+				93EE31D42553333E00A5B8C5 /* DataManager.swift */,
+				93EE31CA255332AA00A5B8C5 /* RemoteDataManager */,
+				93EE31CB255332B300A5B8C5 /* LocalDataManager */,
+			);
+			path = DataManager;
+			sourceTree = "<group>";
+		};
+		93EE31CA255332AA00A5B8C5 /* RemoteDataManager */ = {
+			isa = PBXGroup;
+			children = (
+				93EE31CC255332DF00A5B8C5 /* RemoteDataManager.swift */,
+				93EE31CE255332EA00A5B8C5 /* RemoteDataManagerImpl.swift */,
+			);
+			path = RemoteDataManager;
+			sourceTree = "<group>";
+		};
+		93EE31CB255332B300A5B8C5 /* LocalDataManager */ = {
+			isa = PBXGroup;
+			children = (
+				93EE31D0255332F500A5B8C5 /* LocalDataManager.swift */,
+				93EE31D2255332FE00A5B8C5 /* LocalDataManagerImpl.swift */,
+				93EE31A62553315800A5B8C5 /* CervezApp.xcdatamodeld */,
+			);
+			path = LocalDataManager;
+			sourceTree = "<group>";
+		};
+		93EE31D62553334F00A5B8C5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -185,7 +330,6 @@
 			files = (
 				93EE31AD2553315A00A5B8C5 /* LaunchScreen.storyboard in Resources */,
 				93EE31AA2553315A00A5B8C5 /* Assets.xcassets in Resources */,
-				93EE31A52553315800A5B8C5 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -203,10 +347,30 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				93EE31A22553315800A5B8C5 /* ViewController.swift in Sources */,
+				93EE31C42553324000A5B8C5 /* Coordinator.swift in Sources */,
+				935ED9AB255336280043B8C4 /* BeerDetailViewModel.swift in Sources */,
+				935ED9B825533C040043B8C4 /* FavouritesCoordinator.swift in Sources */,
+				93EE31D52553333E00A5B8C5 /* DataManager.swift in Sources */,
+				93EE31D1255332F500A5B8C5 /* LocalDataManager.swift in Sources */,
+				935ED9A3255335E00043B8C4 /* CategoriesDataManager.swift in Sources */,
+				935ED9A7255336010043B8C4 /* BeersViewController.swift in Sources */,
+				935ED9A5255335F20043B8C4 /* BeersViewModel.swift in Sources */,
+				935ED99A255335920043B8C4 /* BeersCoordinator.swift in Sources */,
+				93EE31CF255332EA00A5B8C5 /* RemoteDataManagerImpl.swift in Sources */,
+				93EE31D3255332FE00A5B8C5 /* LocalDataManagerImpl.swift in Sources */,
 				93EE319E2553315800A5B8C5 /* AppDelegate.swift in Sources */,
+				935ED9B225533BD10043B8C4 /* FavouritesViewModel.swift in Sources */,
+				93EE31C62553326600A5B8C5 /* AppCoordinator.swift in Sources */,
+				93EE31CD255332DF00A5B8C5 /* RemoteDataManager.swift in Sources */,
+				935ED9B425533BDF0043B8C4 /* FavouritesViewController.swift in Sources */,
+				935ED9B625533BEA0043B8C4 /* FavouritesDataManager.swift in Sources */,
 				93EE31A82553315800A5B8C5 /* CervezApp.xcdatamodeld in Sources */,
+				935ED99F255335C90043B8C4 /* CategoriesViewModel.swift in Sources */,
 				93EE31A02553315800A5B8C5 /* SceneDelegate.swift in Sources */,
+				935ED9AF255336410043B8C4 /* BeerDetailDataManager.swift in Sources */,
+				935ED9AD255336330043B8C4 /* BeerDetailViewController.swift in Sources */,
+				935ED9A92553360C0043B8C4 /* BeersDataManager.swift in Sources */,
+				935ED9A1255335D40043B8C4 /* CategoriesViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -229,14 +393,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		93EE31A32553315800A5B8C5 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				93EE31A42553315800A5B8C5 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		93EE31AB2553315A00A5B8C5 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -367,7 +523,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = CervezApp/Info.plist;
+				INFOPLIST_FILE = CervezApp/AppSupport/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -384,7 +540,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = CervezApp/Info.plist;
+				INFOPLIST_FILE = CervezApp/AppSupport/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
