@@ -1,0 +1,487 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		93EE319E2553315800A5B8C5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93EE319D2553315800A5B8C5 /* AppDelegate.swift */; };
+		93EE31A02553315800A5B8C5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93EE319F2553315800A5B8C5 /* SceneDelegate.swift */; };
+		93EE31A22553315800A5B8C5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93EE31A12553315800A5B8C5 /* ViewController.swift */; };
+		93EE31A52553315800A5B8C5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93EE31A32553315800A5B8C5 /* Main.storyboard */; };
+		93EE31A82553315800A5B8C5 /* CervezApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 93EE31A62553315800A5B8C5 /* CervezApp.xcdatamodeld */; };
+		93EE31AA2553315A00A5B8C5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 93EE31A92553315A00A5B8C5 /* Assets.xcassets */; };
+		93EE31AD2553315A00A5B8C5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93EE31AB2553315A00A5B8C5 /* LaunchScreen.storyboard */; };
+		93EE31B82553315B00A5B8C5 /* CervezAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93EE31B72553315B00A5B8C5 /* CervezAppTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		93EE31B42553315B00A5B8C5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 93EE31922553315700A5B8C5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 93EE31992553315800A5B8C5;
+			remoteInfo = CervezApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		93EE319A2553315800A5B8C5 /* CervezApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CervezApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		93EE319D2553315800A5B8C5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		93EE319F2553315800A5B8C5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		93EE31A12553315800A5B8C5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		93EE31A42553315800A5B8C5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		93EE31A72553315800A5B8C5 /* CervezApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CervezApp.xcdatamodel; sourceTree = "<group>"; };
+		93EE31A92553315A00A5B8C5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		93EE31AC2553315A00A5B8C5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		93EE31AE2553315A00A5B8C5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		93EE31B32553315B00A5B8C5 /* CervezAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CervezAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		93EE31B72553315B00A5B8C5 /* CervezAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CervezAppTests.swift; sourceTree = "<group>"; };
+		93EE31B92553315B00A5B8C5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		93EE31972553315800A5B8C5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		93EE31B02553315B00A5B8C5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		93EE31912553315700A5B8C5 = {
+			isa = PBXGroup;
+			children = (
+				93EE319C2553315800A5B8C5 /* CervezApp */,
+				93EE31B62553315B00A5B8C5 /* CervezAppTests */,
+				93EE319B2553315800A5B8C5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		93EE319B2553315800A5B8C5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				93EE319A2553315800A5B8C5 /* CervezApp.app */,
+				93EE31B32553315B00A5B8C5 /* CervezAppTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		93EE319C2553315800A5B8C5 /* CervezApp */ = {
+			isa = PBXGroup;
+			children = (
+				93EE319D2553315800A5B8C5 /* AppDelegate.swift */,
+				93EE319F2553315800A5B8C5 /* SceneDelegate.swift */,
+				93EE31A12553315800A5B8C5 /* ViewController.swift */,
+				93EE31A32553315800A5B8C5 /* Main.storyboard */,
+				93EE31A92553315A00A5B8C5 /* Assets.xcassets */,
+				93EE31AB2553315A00A5B8C5 /* LaunchScreen.storyboard */,
+				93EE31AE2553315A00A5B8C5 /* Info.plist */,
+				93EE31A62553315800A5B8C5 /* CervezApp.xcdatamodeld */,
+			);
+			path = CervezApp;
+			sourceTree = "<group>";
+		};
+		93EE31B62553315B00A5B8C5 /* CervezAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				93EE31B72553315B00A5B8C5 /* CervezAppTests.swift */,
+				93EE31B92553315B00A5B8C5 /* Info.plist */,
+			);
+			path = CervezAppTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		93EE31992553315800A5B8C5 /* CervezApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 93EE31BC2553315B00A5B8C5 /* Build configuration list for PBXNativeTarget "CervezApp" */;
+			buildPhases = (
+				93EE31962553315800A5B8C5 /* Sources */,
+				93EE31972553315800A5B8C5 /* Frameworks */,
+				93EE31982553315800A5B8C5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CervezApp;
+			productName = CervezApp;
+			productReference = 93EE319A2553315800A5B8C5 /* CervezApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		93EE31B22553315B00A5B8C5 /* CervezAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 93EE31BF2553315B00A5B8C5 /* Build configuration list for PBXNativeTarget "CervezAppTests" */;
+			buildPhases = (
+				93EE31AF2553315B00A5B8C5 /* Sources */,
+				93EE31B02553315B00A5B8C5 /* Frameworks */,
+				93EE31B12553315B00A5B8C5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				93EE31B52553315B00A5B8C5 /* PBXTargetDependency */,
+			);
+			name = CervezAppTests;
+			productName = CervezAppTests;
+			productReference = 93EE31B32553315B00A5B8C5 /* CervezAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		93EE31922553315700A5B8C5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1150;
+				LastUpgradeCheck = 1150;
+				ORGANIZATIONNAME = "Ricardo González Pacheco";
+				TargetAttributes = {
+					93EE31992553315800A5B8C5 = {
+						CreatedOnToolsVersion = 11.5;
+					};
+					93EE31B22553315B00A5B8C5 = {
+						CreatedOnToolsVersion = 11.5;
+						TestTargetID = 93EE31992553315800A5B8C5;
+					};
+				};
+			};
+			buildConfigurationList = 93EE31952553315700A5B8C5 /* Build configuration list for PBXProject "CervezApp" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 93EE31912553315700A5B8C5;
+			productRefGroup = 93EE319B2553315800A5B8C5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				93EE31992553315800A5B8C5 /* CervezApp */,
+				93EE31B22553315B00A5B8C5 /* CervezAppTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		93EE31982553315800A5B8C5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				93EE31AD2553315A00A5B8C5 /* LaunchScreen.storyboard in Resources */,
+				93EE31AA2553315A00A5B8C5 /* Assets.xcassets in Resources */,
+				93EE31A52553315800A5B8C5 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		93EE31B12553315B00A5B8C5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		93EE31962553315800A5B8C5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				93EE31A22553315800A5B8C5 /* ViewController.swift in Sources */,
+				93EE319E2553315800A5B8C5 /* AppDelegate.swift in Sources */,
+				93EE31A82553315800A5B8C5 /* CervezApp.xcdatamodeld in Sources */,
+				93EE31A02553315800A5B8C5 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		93EE31AF2553315B00A5B8C5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				93EE31B82553315B00A5B8C5 /* CervezAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		93EE31B52553315B00A5B8C5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 93EE31992553315800A5B8C5 /* CervezApp */;
+			targetProxy = 93EE31B42553315B00A5B8C5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		93EE31A32553315800A5B8C5 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				93EE31A42553315800A5B8C5 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		93EE31AB2553315A00A5B8C5 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				93EE31AC2553315A00A5B8C5 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		93EE31BA2553315B00A5B8C5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		93EE31BB2553315B00A5B8C5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		93EE31BD2553315B00A5B8C5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CervezApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.rigonpa.CervezApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		93EE31BE2553315B00A5B8C5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CervezApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.rigonpa.CervezApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		93EE31C02553315B00A5B8C5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CervezAppTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.rigonpa.CervezAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CervezApp.app/CervezApp";
+			};
+			name = Debug;
+		};
+		93EE31C12553315B00A5B8C5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CervezAppTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.rigonpa.CervezAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CervezApp.app/CervezApp";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		93EE31952553315700A5B8C5 /* Build configuration list for PBXProject "CervezApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				93EE31BA2553315B00A5B8C5 /* Debug */,
+				93EE31BB2553315B00A5B8C5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		93EE31BC2553315B00A5B8C5 /* Build configuration list for PBXNativeTarget "CervezApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				93EE31BD2553315B00A5B8C5 /* Debug */,
+				93EE31BE2553315B00A5B8C5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		93EE31BF2553315B00A5B8C5 /* Build configuration list for PBXNativeTarget "CervezAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				93EE31C02553315B00A5B8C5 /* Debug */,
+				93EE31C12553315B00A5B8C5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		93EE31A62553315800A5B8C5 /* CervezApp.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				93EE31A72553315800A5B8C5 /* CervezApp.xcdatamodel */,
+			);
+			currentVersion = 93EE31A72553315800A5B8C5 /* CervezApp.xcdatamodel */;
+			path = CervezApp.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 93EE31922553315700A5B8C5 /* Project object */;
+}
