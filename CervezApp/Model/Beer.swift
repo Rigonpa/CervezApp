@@ -13,5 +13,6 @@ struct Beer {
     var name: String
     var description: String
     var category: String
+    var categoryId: Int
     var imageUrl: String
 }

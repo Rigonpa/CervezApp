@@ -15,8 +15,8 @@ struct BeersResponse: Codable {
 
 struct ApiBeer: Codable {
     let id: String
-    let label: MediumLabel
-    let style: Style
+    let labels: MediumLabel?
+    let style: Style?
 }
 
 struct MediumLabel: Codable {

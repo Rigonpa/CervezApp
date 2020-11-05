@@ -25,6 +25,7 @@ class LocalDataManagerImpl: LocalDataManager {
                  name: $0.beer_name ?? "",
                  description: $0.beer_description ?? "",
                  category: $0.category_name ?? "",
+                 categoryId: Int($0.category_id),
                  imageUrl: $0.image_url ?? "")
         }
         return beers
@@ -37,6 +38,7 @@ class LocalDataManagerImpl: LocalDataManager {
         favouriteBeer.beer_name = beer.name
         favouriteBeer.beer_description = beer.description
         favouriteBeer.category_name = beer.category
+        favouriteBeer.category_id = Int16(beer.categoryId)
         favouriteBeer.image_url = beer.imageUrl
         
         try? context.save()

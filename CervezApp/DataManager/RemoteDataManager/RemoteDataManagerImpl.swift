@@ -34,12 +34,16 @@ class RemoteDataManagerImpl: RemoteDataManager {
         let request = URLRequest(url: finalUrl)
         
         let dataTask = session.dataTask(with: request) { (data, response, error) in
-            if let httpResponse = response as? HTTPURLResponse,
-                httpResponse.statusCode >= 400 && httpResponse.statusCode < 500, let err = error {
-                DispatchQueue.main.async {
+        if let httpResponse = response as? HTTPURLResponse,
+            httpResponse.statusCode >= 400 && httpResponse.statusCode < 500 {
+            DispatchQueue.main.async {
+                if httpResponse.statusCode == 401 {
+                    completion(.failure(.unauthorized))
+                } else if let err = error {
                     completion(.failure(.networkError(err)))
                 }
             }
+        }
             
             if let data = data,
                 let httpResponse = response as? HTTPURLResponse,
@@ -50,10 +54,11 @@ class RemoteDataManagerImpl: RemoteDataManager {
                     
                     let beers = beersResponse.data.map {
                         Beer(id: $0.id,
-                             name: $0.style.name,
-                             description: $0.style.description,
-                             category: $0.style.category.name,
-                             imageUrl: $0.label.medium)
+                             name: $0.style?.name ?? "No beer name",
+                             description: $0.style?.description ?? "No beer description",
+                             category: $0.style?.category.name ?? "No category name",
+                             categoryId: $0.style?.category.id ?? 0,
+                             imageUrl: $0.labels?.medium ?? " ")
                     }
                     DispatchQueue.main.async {
                         completion(.success(beers))
@@ -80,12 +85,16 @@ class RemoteDataManagerImpl: RemoteDataManager {
         let request = URLRequest(url: finalUrl)
         
         let dataTask = session.dataTask(with: request) { (data, response, error) in
-            if let httpResponse = response as? HTTPURLResponse,
-                httpResponse.statusCode >= 400 && httpResponse.statusCode < 500, let err = error {
-                DispatchQueue.main.async {
+        if let httpResponse = response as? HTTPURLResponse,
+            httpResponse.statusCode >= 400 && httpResponse.statusCode < 500 {
+            DispatchQueue.main.async {
+                if httpResponse.statusCode == 401 {
+                    completion(.failure(.unauthorized))
+                } else if let err = error {
                     completion(.failure(.networkError(err)))
                 }
             }
+        }
             
             if let data = data,
                 let httpResponse = response as? HTTPURLResponse,
@@ -94,10 +103,11 @@ class RemoteDataManagerImpl: RemoteDataManager {
                 do {
                     let apiBeerResponse = try JSONDecoder().decode(ApiBeer.self, from: data)
                     let beer = Beer(id: apiBeerResponse.id,
-                                    name: apiBeerResponse.style.name,
-                                    description: apiBeerResponse.style.description,
-                                    category: apiBeerResponse.style.category.name,
-                                    imageUrl: apiBeerResponse.label.medium)
+                                    name: apiBeerResponse.style?.name ?? "No beer name",
+                                    description: apiBeerResponse.style?.description ?? "No beer description",
+                                    category: apiBeerResponse.style?.category.name ?? "No category name",
+                                    categoryId: apiBeerResponse.style?.category.id ?? 0,
+                                    imageUrl: apiBeerResponse.labels?.medium ?? " ")
                     DispatchQueue.main.async {
                         completion(.success(beer))
                     }
@@ -117,12 +127,11 @@ class RemoteDataManagerImpl: RemoteDataManager {
     
     func getBeerCategories(completion: @escaping (Result<[BeerCategory]?, CustomError>) -> Void) {
         
-        let url = baseURL.appendingPathComponent("/categories/")
+        let url = baseURL.appendingPathComponent("/categories")
         var components = URLComponents(url: url, resolvingAgainstBaseURL: false)
         components?.queryItems = parameters.map { URLQueryItem(name: $0, value: $1)}
         guard let finalUrl = components?.url else { return }
-        var request = URLRequest(url: finalUrl)
-        request.addValue("application/json", forHTTPHeaderField: "Content-Type")
+        let request = URLRequest(url: finalUrl)
         
         let dataTask = session.dataTask(with: request) { (data, response, error) in
             if let httpResponse = response as? HTTPURLResponse,

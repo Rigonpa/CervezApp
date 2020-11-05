@@ -31,9 +31,22 @@ class BeersCoordinator: Coordinator {
         
         // Delegates
         categoriesViewModel.viewDelegate = categoriesViewController
+        categoriesViewModel.coordinatorDelegate = self
         
         presenter.pushViewController(categoriesViewController, animated: true)
     }
     
     override func finish() {}
+}
+
+extension BeersCoordinator: CategoriesCoordinatorDelegate {
+    func categorySelected(categoryId: Int) {
+        let beersViewModel = BeersViewModel(dataManager: beersDataManager)
+        let beersViewController = BeersViewController(viewModel: beersViewModel, categoryId: categoryId)
+        
+        // Delegates
+        beersViewModel.viewDelegate = beersViewController
+        
+        presenter.pushViewController(beersViewController, animated: true)
+    }
 }

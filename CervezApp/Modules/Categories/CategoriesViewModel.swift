@@ -8,6 +8,10 @@
 
 import Foundation
 
+protocol CategoriesCoordinatorDelegate: class {
+    func categorySelected(categoryId: Int)
+}
+
 protocol CategoriesViewDelegate: class {
     func refreshTable()
 }
@@ -17,6 +21,7 @@ class CategoriesViewModel {
     var categoryCellViewModels = [CategoryCellViewModel]()
     
     weak var viewDelegate: CategoriesViewDelegate?
+    weak var coordinatorDelegate: CategoriesCoordinatorDelegate?
     
     let dataManager: CategoriesDataManager
     init(dataManager: CategoriesDataManager) {
@@ -36,8 +41,8 @@ class CategoriesViewModel {
         }
     }
     
-    func didSelectRowAt() {
-        print("Next step")
+    func didSelectRowAt(indexPath: IndexPath) {
+        coordinatorDelegate?.categorySelected(categoryId: categoryCellViewModels[indexPath.item].category.id)
     }
     
     func numberOfSections() -> Int {

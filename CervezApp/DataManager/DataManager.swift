@@ -24,7 +24,22 @@ extension DataManager: CategoriesDataManager {
     }
 }
 
-extension DataManager: BeersDataManager {}
+extension DataManager: BeersDataManager {
+    func getBeers(by categoryId: Int, completion: @escaping (Result<[Beer]?, CustomError>) -> Void) {
+        remoteDataManager?.getBeers(completion: { (response) in
+            switch response {
+            case .success(let successResponse):
+                guard let allBeers = successResponse else { return }
+                let filteredBeersByCategory = allBeers.filter {
+                    $0.categoryId == categoryId
+                }
+                completion(.success(filteredBeersByCategory))
+            case .failure(let error):
+                completion(.failure(error))
+            }
+        })
+    }
+}
 
 extension DataManager: BeerDetailDataManager {}
 

@@ -17,7 +17,8 @@ class CategoriesViewController: UIViewController {
         table.delegate = self
         table.dataSource = self
         table.tableFooterView = UIView()
-        table.rowHeight = 50
+        table.rowHeight = 80
+        table.showsVerticalScrollIndicator = false
         return table
     }()
     
@@ -53,7 +54,7 @@ class CategoriesViewController: UIViewController {
 extension CategoriesViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
-        viewModel.didSelectRowAt()
+        viewModel.didSelectRowAt(indexPath: indexPath)
     }
 }
 
