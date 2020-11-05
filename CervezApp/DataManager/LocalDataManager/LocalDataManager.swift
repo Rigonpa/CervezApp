@@ -9,5 +9,7 @@
 import Foundation
 
 protocol LocalDataManager {
-    
+    func fetchFavouriteBeers() -> [Beer]?
+    func saveBeer(beer: Beer)
+    func deleteBeer(by beerId: String)
 }

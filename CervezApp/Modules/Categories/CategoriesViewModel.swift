@@ -10,8 +10,30 @@ import Foundation
 
 class CategoriesViewModel {
     
+    var categoryCellViewModels = [CategoryCellViewModel]()
+    
     let dataManager: CategoriesDataManager
     init(dataManager: CategoriesDataManager) {
         self.dataManager = dataManager
+    }
+    
+    func viewDidLoad() {
+        dataManager
+    }
+    
+    func didSelectRowAt() {
+        
+    }
+    
+    func numberOfSections() -> Int {
+        
+    }
+    
+    func numberOfRows() -> Int {
+        
+    }
+    
+    func cellForRowAt() -> CategoryCellViewModel? {
+        
     }
 }

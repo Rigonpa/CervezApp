@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9310AB422553836A00A4B694 /* Beer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9310AB412553836A00A4B694 /* Beer.swift */; };
 		935ED99A255335920043B8C4 /* BeersCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935ED999255335920043B8C4 /* BeersCoordinator.swift */; };
 		935ED99F255335C90043B8C4 /* CategoriesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935ED99E255335C90043B8C4 /* CategoriesViewModel.swift */; };
 		935ED9A1255335D40043B8C4 /* CategoriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935ED9A0255335D40043B8C4 /* CategoriesViewController.swift */; };
@@ -21,6 +22,8 @@
 		935ED9B425533BDF0043B8C4 /* FavouritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935ED9B325533BDF0043B8C4 /* FavouritesViewController.swift */; };
 		935ED9B625533BEA0043B8C4 /* FavouritesDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935ED9B525533BEA0043B8C4 /* FavouritesDataManager.swift */; };
 		935ED9B825533C040043B8C4 /* FavouritesCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935ED9B725533C040043B8C4 /* FavouritesCoordinator.swift */; };
+		939AA47D25541D34007D9271 /* CategoryCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 939AA47C25541D34007D9271 /* CategoryCellViewModel.swift */; };
+		939AA47F25541D40007D9271 /* CategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 939AA47E25541D40007D9271 /* CategoryCell.swift */; };
 		93EE319E2553315800A5B8C5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93EE319D2553315800A5B8C5 /* AppDelegate.swift */; };
 		93EE31A02553315800A5B8C5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93EE319F2553315800A5B8C5 /* SceneDelegate.swift */; };
 		93EE31A82553315800A5B8C5 /* CervezApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 93EE31A62553315800A5B8C5 /* CervezApp.xcdatamodeld */; };
@@ -34,6 +37,9 @@
 		93EE31D1255332F500A5B8C5 /* LocalDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93EE31D0255332F500A5B8C5 /* LocalDataManager.swift */; };
 		93EE31D3255332FE00A5B8C5 /* LocalDataManagerImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93EE31D2255332FE00A5B8C5 /* LocalDataManagerImpl.swift */; };
 		93EE31D52553333E00A5B8C5 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93EE31D42553333E00A5B8C5 /* DataManager.swift */; };
+		93F50AE02553687900D26B2C /* CategoriesResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93F50ADF2553687900D26B2C /* CategoriesResponse.swift */; };
+		93F50AE2255369E400D26B2C /* BeersResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93F50AE1255369E400D26B2C /* BeersResponse.swift */; };
+		93F50AE525536EAD00D26B2C /* CustomError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93F50AE425536EAD00D26B2C /* CustomError.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +53,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9310AB412553836A00A4B694 /* Beer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Beer.swift; sourceTree = "<group>"; };
 		935ED999255335920043B8C4 /* BeersCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeersCoordinator.swift; sourceTree = "<group>"; };
 		935ED99E255335C90043B8C4 /* CategoriesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesViewModel.swift; sourceTree = "<group>"; };
 		935ED9A0255335D40043B8C4 /* CategoriesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesViewController.swift; sourceTree = "<group>"; };
@@ -61,6 +68,8 @@
 		935ED9B325533BDF0043B8C4 /* FavouritesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouritesViewController.swift; sourceTree = "<group>"; };
 		935ED9B525533BEA0043B8C4 /* FavouritesDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouritesDataManager.swift; sourceTree = "<group>"; };
 		935ED9B725533C040043B8C4 /* FavouritesCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouritesCoordinator.swift; sourceTree = "<group>"; };
+		939AA47C25541D34007D9271 /* CategoryCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCellViewModel.swift; sourceTree = "<group>"; };
+		939AA47E25541D40007D9271 /* CategoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCell.swift; sourceTree = "<group>"; };
 		93EE319A2553315800A5B8C5 /* CervezApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CervezApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		93EE319D2553315800A5B8C5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		93EE319F2553315800A5B8C5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -78,6 +87,9 @@
 		93EE31D0255332F500A5B8C5 /* LocalDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalDataManager.swift; sourceTree = "<group>"; };
 		93EE31D2255332FE00A5B8C5 /* LocalDataManagerImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalDataManagerImpl.swift; sourceTree = "<group>"; };
 		93EE31D42553333E00A5B8C5 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		93F50ADF2553687900D26B2C /* CategoriesResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesResponse.swift; sourceTree = "<group>"; };
+		93F50AE1255369E400D26B2C /* BeersResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeersResponse.swift; sourceTree = "<group>"; };
+		93F50AE425536EAD00D26B2C /* CustomError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomError.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +116,8 @@
 				935ED9A2255335E00043B8C4 /* CategoriesDataManager.swift */,
 				935ED99E255335C90043B8C4 /* CategoriesViewModel.swift */,
 				935ED9A0255335D40043B8C4 /* CategoriesViewController.swift */,
+				939AA47C25541D34007D9271 /* CategoryCellViewModel.swift */,
+				939AA47E25541D40007D9271 /* CategoryCell.swift */,
 			);
 			path = Categories;
 			sourceTree = "<group>";
@@ -203,10 +217,10 @@
 		93EE31C82553328500A5B8C5 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
-				935ED9B025533BC00043B8C4 /* Favourites */,
 				935ED99B2553359A0043B8C4 /* Categories */,
 				935ED99C255335A90043B8C4 /* Beers */,
 				935ED99D255335AE0043B8C4 /* BeerDetail */,
+				935ED9B025533BC00043B8C4 /* Favourites */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -243,8 +257,28 @@
 		93EE31D62553334F00A5B8C5 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				9310AB412553836A00A4B694 /* Beer.swift */,
+				93F50AE325536E9500D26B2C /* ErrorManagement */,
+				93F50ADE2553685700D26B2C /* ApiResponses */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		93F50ADE2553685700D26B2C /* ApiResponses */ = {
+			isa = PBXGroup;
+			children = (
+				93F50ADF2553687900D26B2C /* CategoriesResponse.swift */,
+				93F50AE1255369E400D26B2C /* BeersResponse.swift */,
+			);
+			path = ApiResponses;
+			sourceTree = "<group>";
+		};
+		93F50AE325536E9500D26B2C /* ErrorManagement */ = {
+			isa = PBXGroup;
+			children = (
+				93F50AE425536EAD00D26B2C /* CustomError.swift */,
+			);
+			path = ErrorManagement;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -354,23 +388,29 @@
 				93EE31D1255332F500A5B8C5 /* LocalDataManager.swift in Sources */,
 				935ED9A3255335E00043B8C4 /* CategoriesDataManager.swift in Sources */,
 				935ED9A7255336010043B8C4 /* BeersViewController.swift in Sources */,
+				93F50AE02553687900D26B2C /* CategoriesResponse.swift in Sources */,
 				935ED9A5255335F20043B8C4 /* BeersViewModel.swift in Sources */,
 				935ED99A255335920043B8C4 /* BeersCoordinator.swift in Sources */,
 				93EE31CF255332EA00A5B8C5 /* RemoteDataManagerImpl.swift in Sources */,
 				93EE31D3255332FE00A5B8C5 /* LocalDataManagerImpl.swift in Sources */,
 				93EE319E2553315800A5B8C5 /* AppDelegate.swift in Sources */,
 				935ED9B225533BD10043B8C4 /* FavouritesViewModel.swift in Sources */,
+				93F50AE525536EAD00D26B2C /* CustomError.swift in Sources */,
+				93F50AE2255369E400D26B2C /* BeersResponse.swift in Sources */,
 				93EE31C62553326600A5B8C5 /* AppCoordinator.swift in Sources */,
 				93EE31CD255332DF00A5B8C5 /* RemoteDataManager.swift in Sources */,
 				935ED9B425533BDF0043B8C4 /* FavouritesViewController.swift in Sources */,
+				9310AB422553836A00A4B694 /* Beer.swift in Sources */,
 				935ED9B625533BEA0043B8C4 /* FavouritesDataManager.swift in Sources */,
 				93EE31A82553315800A5B8C5 /* CervezApp.xcdatamodeld in Sources */,
 				935ED99F255335C90043B8C4 /* CategoriesViewModel.swift in Sources */,
 				93EE31A02553315800A5B8C5 /* SceneDelegate.swift in Sources */,
 				935ED9AF255336410043B8C4 /* BeerDetailDataManager.swift in Sources */,
+				939AA47D25541D34007D9271 /* CategoryCellViewModel.swift in Sources */,
 				935ED9AD255336330043B8C4 /* BeerDetailViewController.swift in Sources */,
 				935ED9A92553360C0043B8C4 /* BeersDataManager.swift in Sources */,
 				935ED9A1255335D40043B8C4 /* CategoriesViewController.swift in Sources */,
+				939AA47F25541D40007D9271 /* CategoryCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

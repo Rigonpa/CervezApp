@@ -9,5 +9,7 @@
 import Foundation
 
 protocol RemoteDataManager {
-    
+    func getBeerCategories(completion: @escaping (Result<[BeerCategory]?, CustomError>) -> Void)
+    func getBeers(completion: @escaping (Result<[Beer]?, CustomError>) -> Void)
+    func getBeer(id: String, completion: @escaping (Result<Beer?, CustomError>) -> Void)
 }

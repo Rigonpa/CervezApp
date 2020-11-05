@@ -10,6 +10,15 @@ import UIKit
 
 class CategoriesViewController: UIViewController {
     
+    lazy var tableView: UITableView = {
+        let table = UITableView()
+        table.translatesAutoresizingMaskIntoConstraints = false
+        table.register(CategoryCell.self, forCellReuseIdentifier: CategoryCell.cellIdentifier)
+        table.delegate = self
+        table.dataSource = self
+        return table
+    }()
+    
     let viewModel: CategoriesViewModel
     init(viewModel: CategoriesViewModel) {
         self.viewModel = viewModel
@@ -21,7 +30,40 @@ class CategoriesViewController: UIViewController {
     }
     
     override func viewDidLoad() {
-        view.backgroundColor = .red
+        viewModel.viewDidLoad()
+        
+        updateUI()
     }
     
+    fileprivate func updateUI() {
+        view.addSubview(tableView)
+        
+        NSLayoutConstraint.activate([
+            tableView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
+            tableView.topAnchor.constraint(equalTo: view.topAnchor),
+            tableView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
+            tableView.bottomAnchor.constraint(equalTo: view.bottomAnchor)
+        ])
+    }
+    
+}
+
+extension CategoriesViewController: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        <#code#>
+    }
+}
+
+extension CategoriesViewController: UITableViewDataSource {
+    func numberOfSections(in tableView: UITableView) -> Int {
+        <#code#>
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        <#code#>
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        <#code#>
+    }
 }
