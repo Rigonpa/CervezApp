@@ -30,6 +30,7 @@ class BeersCoordinator: Coordinator {
         let categoriesViewController = CategoriesViewController(viewModel: categoriesViewModel)
         
         // Delegates
+        categoriesViewModel.viewDelegate = categoriesViewController
         
         presenter.pushViewController(categoriesViewController, animated: true)
     }

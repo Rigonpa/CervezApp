@@ -8,9 +8,15 @@
 
 import Foundation
 
+protocol CategoriesViewDelegate: class {
+    func refreshTable()
+}
+
 class CategoriesViewModel {
     
     var categoryCellViewModels = [CategoryCellViewModel]()
+    
+    weak var viewDelegate: CategoriesViewDelegate?
     
     let dataManager: CategoriesDataManager
     init(dataManager: CategoriesDataManager) {
@@ -18,22 +24,35 @@ class CategoriesViewModel {
     }
     
     func viewDidLoad() {
-        dataManager
+        dataManager.getCategories {[weak self] response in
+            switch response {
+            case .success(let categoriesResponse):
+                guard let categories = categoriesResponse else { return }
+                self?.categoryCellViewModels = categories.map { CategoryCellViewModel(category: $0)}
+                self?.viewDelegate?.refreshTable()
+            case .failure(let error):
+                print(error.localizedDescription)
+            }
+        }
     }
     
     func didSelectRowAt() {
-        
+        print("Next step")
     }
     
     func numberOfSections() -> Int {
-        
+        return 1
     }
     
     func numberOfRows() -> Int {
-        
+        return categoryCellViewModels.count
     }
     
-    func cellForRowAt() -> CategoryCellViewModel? {
-        
+    func cellForRowAt(indexPath: IndexPath) -> CategoryCellViewModel? {
+        if indexPath.row < categoryCellViewModels.count {
+            return categoryCellViewModels[indexPath.row]
+        } else {
+            return nil
+        }
     }
 }

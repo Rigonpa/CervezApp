@@ -16,6 +16,8 @@ class CategoriesViewController: UIViewController {
         table.register(CategoryCell.self, forCellReuseIdentifier: CategoryCell.cellIdentifier)
         table.delegate = self
         table.dataSource = self
+        table.tableFooterView = UIView()
+        table.rowHeight = 50
         return table
     }()
     
@@ -50,20 +52,31 @@ class CategoriesViewController: UIViewController {
 
 extension CategoriesViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        <#code#>
+        tableView.deselectRow(at: indexPath, animated: true)
+        viewModel.didSelectRowAt()
     }
 }
 
 extension CategoriesViewController: UITableViewDataSource {
     func numberOfSections(in tableView: UITableView) -> Int {
-        <#code#>
+        return viewModel.numberOfSections()
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        <#code#>
+        return viewModel.numberOfRows()
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        <#code#>
+        guard let cell =
+            tableView.dequeueReusableCell(withIdentifier: CategoryCell.cellIdentifier, for: indexPath) as? CategoryCell,
+            let cellViewModel = viewModel.cellForRowAt(indexPath: indexPath) else { fatalError() }
+        cell.viewModel = cellViewModel
+        return cell
+    }
+}
+
+extension CategoriesViewController: CategoriesViewDelegate {
+    func refreshTable() {
+        tableView.reloadData()
     }
 }

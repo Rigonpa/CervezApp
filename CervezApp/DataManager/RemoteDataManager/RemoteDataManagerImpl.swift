@@ -22,7 +22,7 @@ class RemoteDataManagerImpl: RemoteDataManager {
     
     var parameters: [String: String] {
         return [
-            "Key":"40759fb26d1c95525eccb893e9c7e06c"
+            "key":"40759fb26d1c95525eccb893e9c7e06c"
         ]
     }
     
@@ -117,17 +117,22 @@ class RemoteDataManagerImpl: RemoteDataManager {
     
     func getBeerCategories(completion: @escaping (Result<[BeerCategory]?, CustomError>) -> Void) {
         
-        let url = baseURL.appendingPathComponent("/categories")
+        let url = baseURL.appendingPathComponent("/categories/")
         var components = URLComponents(url: url, resolvingAgainstBaseURL: false)
         components?.queryItems = parameters.map { URLQueryItem(name: $0, value: $1)}
         guard let finalUrl = components?.url else { return }
-        let request = URLRequest(url: finalUrl)
+        var request = URLRequest(url: finalUrl)
+        request.addValue("application/json", forHTTPHeaderField: "Content-Type")
         
         let dataTask = session.dataTask(with: request) { (data, response, error) in
             if let httpResponse = response as? HTTPURLResponse,
-                httpResponse.statusCode >= 400 && httpResponse.statusCode < 500, let err = error {
+                httpResponse.statusCode >= 400 && httpResponse.statusCode < 500 {
                 DispatchQueue.main.async {
-                    completion(.failure(.networkError(err)))
+                    if httpResponse.statusCode == 401 {
+                        completion(.failure(.unauthorized))
+                    } else if let err = error {
+                        completion(.failure(.networkError(err)))
+                    }
                 }
             }
             

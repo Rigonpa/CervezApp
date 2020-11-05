@@ -15,8 +15,8 @@ class CategoryCell: UITableViewCell {
     lazy var categoryLabel: UILabel = {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
-        label.textAlignment = .center
-        label.font = UIFont.systemFont(ofSize: 14)
+        label.textAlignment = .natural
+        label.font = UIFont.systemFont(ofSize: 20)
         return label
     }()
     
@@ -33,9 +33,9 @@ class CategoryCell: UITableViewCell {
         addSubview(categoryLabel)
         
         NSLayoutConstraint.activate([
-            categoryLabel.leadingAnchor.constraint(equalTo: leadingAnchor),
+            categoryLabel.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 16),
             categoryLabel.topAnchor.constraint(equalTo: topAnchor),
-            categoryLabel.trailingAnchor.constraint(equalTo: trailingAnchor),
+            categoryLabel.trailingAnchor.constraint(equalTo: trailingAnchor, constant: 16),
             categoryLabel.bottomAnchor.constraint(equalTo: bottomAnchor)
         ])
     }

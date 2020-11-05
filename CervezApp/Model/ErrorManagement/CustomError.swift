@@ -10,6 +10,7 @@ import Foundation
 
 enum CustomError: Error {
     case emptyResponse
+    case unauthorized
     case networkError(Error)
     case decodingError(Error)
 }

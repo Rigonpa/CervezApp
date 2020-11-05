@@ -18,7 +18,11 @@ class DataManager {
     }
 }
 
-extension DataManager: CategoriesDataManager {}
+extension DataManager: CategoriesDataManager {
+    func getCategories(completion: @escaping (Result<[BeerCategory]?, CustomError>) -> Void) {
+        remoteDataManager?.getBeerCategories(completion: completion)
+    }
+}
 
 extension DataManager: BeersDataManager {}
 

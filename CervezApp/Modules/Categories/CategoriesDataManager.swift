@@ -9,5 +9,5 @@
 import Foundation
 
 protocol CategoriesDataManager {
-    
+    func getCategories(completion: @escaping (Result<[BeerCategory]?, CustomError>) -> Void)
 }
