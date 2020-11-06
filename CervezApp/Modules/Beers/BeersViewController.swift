@@ -39,8 +39,8 @@ class BeersViewController: UIViewController {
     }()
     
     let viewModel: BeersViewModel
-    let categoryId: Int
-    init(viewModel: BeersViewModel, categoryId: Int) {
+    let categoryId: Int?
+    init(viewModel: BeersViewModel, categoryId: Int?) {
         self.viewModel = viewModel
         self.categoryId = categoryId
         super.init(nibName: nil, bundle: nil)
@@ -52,7 +52,6 @@ class BeersViewController: UIViewController {
     
     override func viewDidLoad() {
         viewModel.viewDidLoad(categoryId: categoryId)
-        
         setupUI()
     }
     

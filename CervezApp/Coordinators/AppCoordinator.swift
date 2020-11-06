@@ -44,7 +44,8 @@ class AppCoordinator: Coordinator {
         
         let favouritesNavigationController = UINavigationController()
         let favouritesCoordinator = FavouritesCoordinator(presenter: favouritesNavigationController,
-                                                          favouritesDataManager: dataManager)
+                                                          favouritesDataManager: dataManager,
+                                                          beerDetailDataManager: dataManager)
         
         addChildCoordinator(coordinator: favouritesCoordinator)
         favouritesCoordinator.start()

@@ -25,6 +25,10 @@ extension DataManager: CategoriesDataManager {
 }
 
 extension DataManager: BeersDataManager {
+    func fetchFavouriteBeers() -> [Beer]? {
+        return localDataManager?.fetchFavouriteBeers()
+    }
+    
     func getBeers(by categoryId: Int, completion: @escaping (Result<[Beer]?, CustomError>) -> Void) {
         remoteDataManager?.getBeers(completion: { (response) in
             switch response {
@@ -41,8 +45,22 @@ extension DataManager: BeersDataManager {
     }
 }
 
-extension DataManager: BeerDetailDataManager {}
-
-extension DataManager: FavouritesDataManager {}
+extension DataManager: BeerDetailDataManager {
+    func saveFavouriteBeer(beer: Beer) {
+        localDataManager?.saveFavouriteBeer(beer: beer)
+    }
+    
+    func deleteFavouriteBeer(by beerId: String) {
+        localDataManager?.deleteFavouriteBeer(by: beerId)
+    }
+    
+    func fetchFavouriteBeer(by beerId: String) -> Beer? {
+        localDataManager?.fetchFavouriteBeer(by: beerId)
+    }
+    
+    func getBeer(id: String, completion: @escaping (Result<Beer?, CustomError>) -> Void) {
+        remoteDataManager?.getBeer(id: id, completion: completion)
+    }
+}
 
 

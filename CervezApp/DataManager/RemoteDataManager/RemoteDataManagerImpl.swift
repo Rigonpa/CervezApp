@@ -78,7 +78,7 @@ class RemoteDataManagerImpl: RemoteDataManager {
     }
     
     func getBeer(id: String, completion: @escaping (Result<Beer?, CustomError>) -> Void) {
-        let url = baseURL.appendingPathComponent("/beers/\(id)")
+        let url = baseURL.appendingPathComponent("/beer/\(id)")
         var components = URLComponents(url: url, resolvingAgainstBaseURL: false)
         components?.queryItems = parameters.map { URLQueryItem(name: $0, value: $1)}
         guard let finalUrl = components?.url else { return }
@@ -101,13 +101,13 @@ class RemoteDataManagerImpl: RemoteDataManager {
                 httpResponse.statusCode >= 200 && httpResponse.statusCode < 300 {
                 
                 do {
-                    let apiBeerResponse = try JSONDecoder().decode(ApiBeer.self, from: data)
-                    let beer = Beer(id: apiBeerResponse.id,
-                                    name: apiBeerResponse.style?.name ?? "No beer name",
-                                    description: apiBeerResponse.style?.description ?? "No beer description",
-                                    category: apiBeerResponse.style?.category.name ?? "No category name",
-                                    categoryId: apiBeerResponse.style?.category.id ?? 0,
-                                    imageUrl: apiBeerResponse.labels?.medium ?? " ")
+                    let beerResponse = try JSONDecoder().decode(BeerResponse.self, from: data)
+                    let beer = Beer(id: beerResponse.data.id,
+                                    name: beerResponse.data.style?.name ?? "No beer name",
+                                    description: beerResponse.data.style?.description ?? "No beer description",
+                                    category: beerResponse.data.style?.category.name ?? "No category name",
+                                    categoryId: beerResponse.data.style?.category.id ?? 0,
+                                    imageUrl: beerResponse.data.labels?.medium ?? " ")
                     DispatchQueue.main.async {
                         completion(.success(beer))
                     }

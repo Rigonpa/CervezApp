@@ -9,5 +9,9 @@
 import Foundation
 
 protocol BeerDetailDataManager {
+    func getBeer(id: String, completion: @escaping (Result<Beer?, CustomError>) -> Void)
     
+    func saveFavouriteBeer(beer: Beer)
+    func deleteFavouriteBeer(by beerId: String)
+    func fetchFavouriteBeer(by beerId: String) -> Beer?
 }

@@ -31,7 +31,7 @@ class LocalDataManagerImpl: LocalDataManager {
         return beers
     }
     
-    func saveBeer(beer: Beer) {
+    func saveFavouriteBeer(beer: Beer) {
         guard let entity = NSEntityDescription.entity(forEntityName: favouriteBeerEntity, in: context) else { return }
         let favouriteBeer = FavouriteBeer(entity: entity, insertInto: context)
         favouriteBeer.id = beer.id
@@ -44,7 +44,26 @@ class LocalDataManagerImpl: LocalDataManager {
         try? context.save()
     }
     
-    func deleteBeer(by beerId: String) {
+    func fetchFavouriteBeer(by beerId: String) -> Beer? {
+        let fetchRequest = NSFetchRequest<NSManagedObject>(entityName: favouriteBeerEntity)
+        fetchRequest.predicate = NSPredicate(format: "id = %@", beerId)
+        do {
+            guard let favBeer = try context.fetch(fetchRequest) as? [FavouriteBeer] else { return nil }
+            let beer = favBeer.map {
+                Beer(id: $0.id ?? "",
+                     name: $0.beer_name ?? "",
+                     description: $0.beer_description ?? "",
+                     category: $0.category_name ?? "",
+                     categoryId: Int($0.category_id),
+                     imageUrl: $0.image_url ?? "")
+            }
+            return beer.first
+        } catch {
+            return nil
+        }
+    }
+    
+    func deleteFavouriteBeer(by beerId: String) {
         let fetchRequest = NSFetchRequest<NSManagedObject>(entityName: favouriteBeerEntity)
         fetchRequest.predicate = NSPredicate(format: "id = %@", beerId)
         let notFavouriteBeer = try? context.fetch(fetchRequest)

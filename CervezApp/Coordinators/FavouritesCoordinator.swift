@@ -11,23 +11,41 @@ import UIKit
 class FavouritesCoordinator: Coordinator {
     
     var presenter: UINavigationController
-    var favouritesDataManager: FavouritesDataManager
+    var favouritesDataManager: BeersDataManager
+    var beerDetailDataManager: BeerDetailDataManager
     
     init(presenter: UINavigationController,
-         favouritesDataManager: FavouritesDataManager) {
+         favouritesDataManager: BeersDataManager,
+         beerDetailDataManager: BeerDetailDataManager) {
         self.presenter = presenter
         self.favouritesDataManager = favouritesDataManager
+        self.beerDetailDataManager = beerDetailDataManager
     }
     
     override func start() {
-        let favouritesViewModel = FavouritesViewModel(dataManager: favouritesDataManager)
-        let favouritesViewController = FavouritesViewController(viewModel: favouritesViewModel)
+        let favouritesViewModel = BeersViewModel(dataManager: favouritesDataManager)
+        let favouritesViewController = BeersViewController(viewModel: favouritesViewModel, categoryId: nil)
         
         // Delegates
+        favouritesViewModel.viewDelegate = favouritesViewController
+        favouritesViewModel.coordinatorDelegate = self
         
         presenter.pushViewController(favouritesViewController, animated: true)
     }
     
     override func finish() {}
     
+}
+
+extension FavouritesCoordinator: BeersCoordinatorDelegate {
+    func beerSelected(beerId: String) {
+        let beerDetailViewModel = BeerDetailViewModel(dataManager: beerDetailDataManager)
+        let beersDetailViewController = BeerDetailViewController(viewModel: beerDetailViewModel, beerId: beerId)
+        
+        // Delegates
+        beerDetailViewModel.viewDelegate = beersDetailViewController
+//        beerDetailViewModel.coordinatorDelegate = self
+        
+        presenter.pushViewController(beersDetailViewController, animated: true)
+    }
 }

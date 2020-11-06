@@ -20,10 +20,15 @@
 		935ED9AB255336280043B8C4 /* BeerDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935ED9AA255336280043B8C4 /* BeerDetailViewModel.swift */; };
 		935ED9AD255336330043B8C4 /* BeerDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935ED9AC255336330043B8C4 /* BeerDetailViewController.swift */; };
 		935ED9AF255336410043B8C4 /* BeerDetailDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935ED9AE255336410043B8C4 /* BeerDetailDataManager.swift */; };
-		935ED9B225533BD10043B8C4 /* FavouritesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935ED9B125533BD10043B8C4 /* FavouritesViewModel.swift */; };
-		935ED9B425533BDF0043B8C4 /* FavouritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935ED9B325533BDF0043B8C4 /* FavouritesViewController.swift */; };
-		935ED9B625533BEA0043B8C4 /* FavouritesDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935ED9B525533BEA0043B8C4 /* FavouritesDataManager.swift */; };
 		935ED9B825533C040043B8C4 /* FavouritesCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935ED9B725533C040043B8C4 /* FavouritesCoordinator.swift */; };
+		937EDA432554AD5C00EBA784 /* DetailImageCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 937EDA422554AD5C00EBA784 /* DetailImageCellViewModel.swift */; };
+		937EDA452554AD6B00EBA784 /* DetailImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 937EDA442554AD6B00EBA784 /* DetailImageCell.swift */; };
+		937EDA472554AD8700EBA784 /* DetailNameCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 937EDA462554AD8700EBA784 /* DetailNameCellViewModel.swift */; };
+		937EDA492554AD9500EBA784 /* DetailNameCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 937EDA482554AD9500EBA784 /* DetailNameCell.swift */; };
+		937EDA4B2554ADA300EBA784 /* DetailDescCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 937EDA4A2554ADA300EBA784 /* DetailDescCellViewModel.swift */; };
+		937EDA4D2554ADB200EBA784 /* DetailDescCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 937EDA4C2554ADB200EBA784 /* DetailDescCell.swift */; };
+		937EDA4F2554B1E000EBA784 /* CellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 937EDA4E2554B1E000EBA784 /* CellViewModel.swift */; };
+		937EDA512555597400EBA784 /* BeerResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 937EDA502555597400EBA784 /* BeerResponse.swift */; };
 		939AA47D25541D34007D9271 /* CategoryCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 939AA47C25541D34007D9271 /* CategoryCellViewModel.swift */; };
 		939AA47F25541D40007D9271 /* CategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 939AA47E25541D40007D9271 /* CategoryCell.swift */; };
 		93EE319E2553315800A5B8C5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93EE319D2553315800A5B8C5 /* AppDelegate.swift */; };
@@ -68,10 +73,15 @@
 		935ED9AA255336280043B8C4 /* BeerDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerDetailViewModel.swift; sourceTree = "<group>"; };
 		935ED9AC255336330043B8C4 /* BeerDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerDetailViewController.swift; sourceTree = "<group>"; };
 		935ED9AE255336410043B8C4 /* BeerDetailDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerDetailDataManager.swift; sourceTree = "<group>"; };
-		935ED9B125533BD10043B8C4 /* FavouritesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouritesViewModel.swift; sourceTree = "<group>"; };
-		935ED9B325533BDF0043B8C4 /* FavouritesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouritesViewController.swift; sourceTree = "<group>"; };
-		935ED9B525533BEA0043B8C4 /* FavouritesDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouritesDataManager.swift; sourceTree = "<group>"; };
 		935ED9B725533C040043B8C4 /* FavouritesCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouritesCoordinator.swift; sourceTree = "<group>"; };
+		937EDA422554AD5C00EBA784 /* DetailImageCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailImageCellViewModel.swift; sourceTree = "<group>"; };
+		937EDA442554AD6B00EBA784 /* DetailImageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailImageCell.swift; sourceTree = "<group>"; };
+		937EDA462554AD8700EBA784 /* DetailNameCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailNameCellViewModel.swift; sourceTree = "<group>"; };
+		937EDA482554AD9500EBA784 /* DetailNameCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailNameCell.swift; sourceTree = "<group>"; };
+		937EDA4A2554ADA300EBA784 /* DetailDescCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailDescCellViewModel.swift; sourceTree = "<group>"; };
+		937EDA4C2554ADB200EBA784 /* DetailDescCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailDescCell.swift; sourceTree = "<group>"; };
+		937EDA4E2554B1E000EBA784 /* CellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellViewModel.swift; sourceTree = "<group>"; };
+		937EDA502555597400EBA784 /* BeerResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerResponse.swift; sourceTree = "<group>"; };
 		939AA47C25541D34007D9271 /* CategoryCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCellViewModel.swift; sourceTree = "<group>"; };
 		939AA47E25541D40007D9271 /* CategoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCell.swift; sourceTree = "<group>"; };
 		93EE319A2553315800A5B8C5 /* CervezApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CervezApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -144,18 +154,23 @@
 				935ED9AE255336410043B8C4 /* BeerDetailDataManager.swift */,
 				935ED9AA255336280043B8C4 /* BeerDetailViewModel.swift */,
 				935ED9AC255336330043B8C4 /* BeerDetailViewController.swift */,
+				937EDA412554ACC200EBA784 /* Cells */,
 			);
 			path = BeerDetail;
 			sourceTree = "<group>";
 		};
-		935ED9B025533BC00043B8C4 /* Favourites */ = {
+		937EDA412554ACC200EBA784 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
-				935ED9B525533BEA0043B8C4 /* FavouritesDataManager.swift */,
-				935ED9B125533BD10043B8C4 /* FavouritesViewModel.swift */,
-				935ED9B325533BDF0043B8C4 /* FavouritesViewController.swift */,
+				937EDA4E2554B1E000EBA784 /* CellViewModel.swift */,
+				937EDA422554AD5C00EBA784 /* DetailImageCellViewModel.swift */,
+				937EDA442554AD6B00EBA784 /* DetailImageCell.swift */,
+				937EDA462554AD8700EBA784 /* DetailNameCellViewModel.swift */,
+				937EDA482554AD9500EBA784 /* DetailNameCell.swift */,
+				937EDA4A2554ADA300EBA784 /* DetailDescCellViewModel.swift */,
+				937EDA4C2554ADB200EBA784 /* DetailDescCell.swift */,
 			);
-			path = Favourites;
+			path = Cells;
 			sourceTree = "<group>";
 		};
 		93EE31912553315700A5B8C5 = {
@@ -226,7 +241,6 @@
 				935ED99B2553359A0043B8C4 /* Categories */,
 				935ED99C255335A90043B8C4 /* Beers */,
 				935ED99D255335AE0043B8C4 /* BeerDetail */,
-				935ED9B025533BC00043B8C4 /* Favourites */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -275,6 +289,7 @@
 			children = (
 				93F50ADF2553687900D26B2C /* CategoriesResponse.swift */,
 				93F50AE1255369E400D26B2C /* BeersResponse.swift */,
+				937EDA502555597400EBA784 /* BeerResponse.swift */,
 			);
 			path = ApiResponses;
 			sourceTree = "<group>";
@@ -388,6 +403,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				93EE31C42553324000A5B8C5 /* Coordinator.swift in Sources */,
+				937EDA432554AD5C00EBA784 /* DetailImageCellViewModel.swift in Sources */,
 				935ED9AB255336280043B8C4 /* BeerDetailViewModel.swift in Sources */,
 				935ED9B825533C040043B8C4 /* FavouritesCoordinator.swift in Sources */,
 				93EE31D52553333E00A5B8C5 /* DataManager.swift in Sources */,
@@ -395,19 +411,21 @@
 				935ED9A3255335E00043B8C4 /* CategoriesDataManager.swift in Sources */,
 				935ED9A7255336010043B8C4 /* BeersViewController.swift in Sources */,
 				93F50AE02553687900D26B2C /* CategoriesResponse.swift in Sources */,
+				937EDA472554AD8700EBA784 /* DetailNameCellViewModel.swift in Sources */,
 				935ED9A5255335F20043B8C4 /* BeersViewModel.swift in Sources */,
+				937EDA452554AD6B00EBA784 /* DetailImageCell.swift in Sources */,
 				935ED99A255335920043B8C4 /* BeersCoordinator.swift in Sources */,
 				93EE31CF255332EA00A5B8C5 /* RemoteDataManagerImpl.swift in Sources */,
+				937EDA4B2554ADA300EBA784 /* DetailDescCellViewModel.swift in Sources */,
 				93EE31D3255332FE00A5B8C5 /* LocalDataManagerImpl.swift in Sources */,
 				93EE319E2553315800A5B8C5 /* AppDelegate.swift in Sources */,
-				935ED9B225533BD10043B8C4 /* FavouritesViewModel.swift in Sources */,
 				93F50AE525536EAD00D26B2C /* CustomError.swift in Sources */,
+				937EDA4D2554ADB200EBA784 /* DetailDescCell.swift in Sources */,
 				93F50AE2255369E400D26B2C /* BeersResponse.swift in Sources */,
 				93EE31C62553326600A5B8C5 /* AppCoordinator.swift in Sources */,
 				93EE31CD255332DF00A5B8C5 /* RemoteDataManager.swift in Sources */,
-				935ED9B425533BDF0043B8C4 /* FavouritesViewController.swift in Sources */,
 				9310AB422553836A00A4B694 /* Beer.swift in Sources */,
-				935ED9B625533BEA0043B8C4 /* FavouritesDataManager.swift in Sources */,
+				937EDA492554AD9500EBA784 /* DetailNameCell.swift in Sources */,
 				93EE31A82553315800A5B8C5 /* CervezApp.xcdatamodeld in Sources */,
 				932C59E625542FAE000F473D /* BeerItem.swift in Sources */,
 				935ED99F255335C90043B8C4 /* CategoriesViewModel.swift in Sources */,
@@ -415,9 +433,11 @@
 				935ED9AF255336410043B8C4 /* BeerDetailDataManager.swift in Sources */,
 				939AA47D25541D34007D9271 /* CategoryCellViewModel.swift in Sources */,
 				935ED9AD255336330043B8C4 /* BeerDetailViewController.swift in Sources */,
+				937EDA512555597400EBA784 /* BeerResponse.swift in Sources */,
 				932C59E425542FA6000F473D /* BeerItemViewModel.swift in Sources */,
 				935ED9A92553360C0043B8C4 /* BeersDataManager.swift in Sources */,
 				935ED9A1255335D40043B8C4 /* CategoriesViewController.swift in Sources */,
+				937EDA4F2554B1E000EBA784 /* CellViewModel.swift in Sources */,
 				939AA47F25541D40007D9271 /* CategoryCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
