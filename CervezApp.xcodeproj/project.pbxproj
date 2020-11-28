@@ -10,6 +10,7 @@
 		9310AB422553836A00A4B694 /* Beer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9310AB412553836A00A4B694 /* Beer.swift */; };
 		932C59E425542FA6000F473D /* BeerItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 932C59E325542FA6000F473D /* BeerItemViewModel.swift */; };
 		932C59E625542FAE000F473D /* BeerItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 932C59E525542FAE000F473D /* BeerItem.swift */; };
+		935C85342555B0BF001BEBBC /* TestDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935C85332555B0BF001BEBBC /* TestDataManager.swift */; };
 		935ED99A255335920043B8C4 /* BeersCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935ED999255335920043B8C4 /* BeersCoordinator.swift */; };
 		935ED99F255335C90043B8C4 /* CategoriesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935ED99E255335C90043B8C4 /* CategoriesViewModel.swift */; };
 		935ED9A1255335D40043B8C4 /* CategoriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935ED9A0255335D40043B8C4 /* CategoriesViewController.swift */; };
@@ -63,6 +64,7 @@
 		9310AB412553836A00A4B694 /* Beer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Beer.swift; sourceTree = "<group>"; };
 		932C59E325542FA6000F473D /* BeerItemViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerItemViewModel.swift; sourceTree = "<group>"; };
 		932C59E525542FAE000F473D /* BeerItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerItem.swift; sourceTree = "<group>"; };
+		935C85332555B0BF001BEBBC /* TestDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestDataManager.swift; sourceTree = "<group>"; };
 		935ED999255335920043B8C4 /* BeersCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeersCoordinator.swift; sourceTree = "<group>"; };
 		935ED99E255335C90043B8C4 /* CategoriesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesViewModel.swift; sourceTree = "<group>"; };
 		935ED9A0255335D40043B8C4 /* CategoriesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesViewController.swift; sourceTree = "<group>"; };
@@ -248,6 +250,7 @@
 		93EE31C92553328F00A5B8C5 /* DataManager */ = {
 			isa = PBXGroup;
 			children = (
+				935C85332555B0BF001BEBBC /* TestDataManager.swift */,
 				93EE31D42553333E00A5B8C5 /* DataManager.swift */,
 				93EE31CA255332AA00A5B8C5 /* RemoteDataManager */,
 				93EE31CB255332B300A5B8C5 /* LocalDataManager */,
@@ -415,6 +418,7 @@
 				935ED9A5255335F20043B8C4 /* BeersViewModel.swift in Sources */,
 				937EDA452554AD6B00EBA784 /* DetailImageCell.swift in Sources */,
 				935ED99A255335920043B8C4 /* BeersCoordinator.swift in Sources */,
+				935C85342555B0BF001BEBBC /* TestDataManager.swift in Sources */,
 				93EE31CF255332EA00A5B8C5 /* RemoteDataManagerImpl.swift in Sources */,
 				937EDA4B2554ADA300EBA784 /* DetailDescCellViewModel.swift in Sources */,
 				93EE31D3255332FE00A5B8C5 /* LocalDataManagerImpl.swift in Sources */,

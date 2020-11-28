@@ -8,9 +8,9 @@
 
 import Foundation
 
-protocol BeerDetailCoordinatorDelegate: class {
-    func backToBeersList()
-}
+//protocol BeerDetailCoordinatorDelegate: class {
+//    func backToBeersList()
+//}
 
 protocol BeerDetailViewDelegate: class {
     func refreshTable()
@@ -22,7 +22,7 @@ class BeerDetailViewModel {
     var beer: Beer?
     
     weak var viewDelegate: BeerDetailViewDelegate?
-    weak var coordinatorDelegate: BeerDetailCoordinatorDelegate?
+//    weak var coordinatorDelegate: BeerDetailCoordinatorDelegate?
     
     let dataManager: BeerDetailDataManager
     init(dataManager: BeerDetailDataManager) {
@@ -48,9 +48,9 @@ class BeerDetailViewModel {
         }
     }
     
-    func backToBeersList() {
-        coordinatorDelegate?.backToBeersList()
-    }
+//    func backToBeersList() {
+//        coordinatorDelegate?.backToBeersList()
+//    }
     
     func numberOfSections() -> Int {
         return 1
@@ -80,11 +80,17 @@ extension BeerDetailViewModel: DetailBeerCellDelegate {
         guard let beer = self.beer else { fatalError() }
         dataManager.deleteFavouriteBeer(by: beer.id)
         self.viewDidLoad(beerId: beer.id)
+        
+//        coordinatorDelegate?.backToBeersList()
+        
     }
     
     func changeToFavBeer() {
         guard let beer = self.beer else { fatalError() }
         dataManager.saveFavouriteBeer(beer: beer)
         self.viewDidLoad(beerId: beer.id)
+        
+//        coordinatorDelegate?.backToBeersList()
+        
     }
 }

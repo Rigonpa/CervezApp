@@ -56,8 +56,8 @@ class AppCoordinator: Coordinator {
         beersNavigationController.tabBarItem = UITabBarItem(title: "Beers", image: UIImage(systemName: "list.dash"), tag: 0)
         favouritesNavigationController.tabBarItem = UITabBarItem(title: "Favourites", image: UIImage(systemName: "star.fill"), tag: 1)
         
-        
         window.rootViewController = tabbar
         window.makeKeyAndVisible()
     }
 }
+

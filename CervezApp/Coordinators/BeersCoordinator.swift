@@ -71,9 +71,10 @@ extension BeersCoordinator: BeersCoordinatorDelegate {
     }
 }
 
-extension BeersCoordinator: BeerDetailCoordinatorDelegate {
-    func backToBeersList() {
-        beersViewModel
-        presenter.popViewController(animated: true)
-    }
-}
+//extension BeersCoordinator: BeerDetailCoordinatorDelegate {
+//    func backToBeersList() {
+//        beersViewModel?.getBeersOfSpecificCategory()
+//        beersViewModel?.getFavouriteBeers()
+//        presenter.popViewController(animated: true)
+//    }
+//}

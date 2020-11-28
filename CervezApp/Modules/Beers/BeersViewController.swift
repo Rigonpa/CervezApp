@@ -51,8 +51,13 @@ class BeersViewController: UIViewController {
     }
     
     override func viewDidLoad() {
+//        viewModel.getTestBeers()
         viewModel.viewDidLoad(categoryId: categoryId)
         setupUI()
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        viewModel.viewDidLoad(categoryId: categoryId)
     }
     
     fileprivate func setupUI() {

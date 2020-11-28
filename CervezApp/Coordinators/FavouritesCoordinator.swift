@@ -14,6 +14,10 @@ class FavouritesCoordinator: Coordinator {
     var favouritesDataManager: BeersDataManager
     var beerDetailDataManager: BeerDetailDataManager
     
+    // Need to write here beersVM to refresh beers list
+    // when back button of beer details view controller is pressed:
+    var favouritesViewModel: BeersViewModel?
+    
     init(presenter: UINavigationController,
          favouritesDataManager: BeersDataManager,
          beerDetailDataManager: BeerDetailDataManager) {
@@ -23,7 +27,8 @@ class FavouritesCoordinator: Coordinator {
     }
     
     override func start() {
-        let favouritesViewModel = BeersViewModel(dataManager: favouritesDataManager)
+        favouritesViewModel = BeersViewModel(dataManager: favouritesDataManager)
+        guard let favouritesViewModel = self.favouritesViewModel else { return }
         let favouritesViewController = BeersViewController(viewModel: favouritesViewModel, categoryId: nil)
         
         // Delegates
@@ -49,3 +54,11 @@ extension FavouritesCoordinator: BeersCoordinatorDelegate {
         presenter.pushViewController(beersDetailViewController, animated: true)
     }
 }
+
+//extension FavouritesCoordinator: BeerDetailCoordinatorDelegate {
+//    func backToBeersList() {
+//        favouritesViewModel?.getBeersOfSpecificCategory()
+//        favouritesViewModel?.getFavouriteBeers()
+//        presenter.popViewController(animated: true)
+//    }
+//}

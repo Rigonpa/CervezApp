@@ -20,6 +20,7 @@ class BeersViewModel {
     
     var beerItemViewModels = [BeerItemViewModel]()
     var favouriteBeerItemViewModels = [BeerItemViewModel]()
+    var categoryId: Int = 0
     
     weak var viewDelegate: BeersViewDelegate?
     weak var coordinatorDelegate: BeersCoordinatorDelegate?
@@ -34,17 +35,17 @@ class BeersViewModel {
     func viewDidLoad(categoryId: Int?) {
         
         if categoryId != nil, let categId = categoryId {
+            self.categoryId = categId
             favSection = false
-            getBeersOfSpecificCategory(categoryId: categId)
+            getBeersOfSpecificCategory()
         } else {
             favSection = true
             getFavouriteBeers()
         }
     }
     
-    fileprivate func getBeersOfSpecificCategory(categoryId: Int) {
-        beerItemViewModels.removeAll(keepingCapacity: false)
-        dataManager.getBeers(by: categoryId) {[weak self] response in
+    func getBeersOfSpecificCategory() {
+        dataManager.getBeers(by: self.categoryId) {[weak self] response in
             switch response {
             case .success(let beersResponse):
                 guard let beers = beersResponse else { return }
@@ -56,18 +57,18 @@ class BeersViewModel {
         }
     }
     
-    fileprivate func getFavouriteBeers() {
-        favouriteBeerItemViewModels.removeAll(keepingCapacity: false)
+    func getFavouriteBeers() {
+//        favouriteBeerItemViewModels.removeAll(keepingCapacity: false) -> Crash when selecting other item before fetch is finished.
         guard let favouriteBeers = dataManager.fetchFavouriteBeers() else { return }
         favouriteBeerItemViewModels = favouriteBeers.map { BeerItemViewModel(beer: $0)}
         viewDelegate?.refreshTable()
     }
     
     func didSelectItemAt(indexPath: IndexPath) {
+        
         coordinatorDelegate?.beerSelected(beerId: favSection ?
             favouriteBeerItemViewModels[indexPath.item].beer.id :
-            beerItemViewModels[indexPath.item].beer.id
-        )
+            beerItemViewModels[indexPath.item].beer.id)
     }
     
     func numberOfSections() -> Int {

@@ -34,11 +34,14 @@ class BeerDetailViewController: UIViewController {
         fatalError("init(coder:) has not been implemented")
     }
     
-    override func loadView() {
-        let backBarButtonItem = UIBarButtonItem(image: UIImage(systemName: "arrow.left"), style: .plain, target: self, action: #selector(handleBackToBeers))
-        backBarButtonItem.tintColor = .black
-        navigationItem.backBarButtonItem = backBarButtonItem
-    }
+//    override func loadView() {
+//        view = UIView() // Key action
+//        let backBarButtonItem: UIBarButtonItem = UIBarButtonItem(image: UIImage(systemName: "arrow.left"), style: .plain, target: self, action: #selector(handleBackToBeers))
+//        backBarButtonItem.tintColor = .black
+//        let myNavigationItem = UINavigationItem(title: "Beer details")
+//        myNavigationItem.backBarButtonItem = backBarButtonItem
+//
+//    }
     
     override func viewDidLoad() {
         viewModel.viewDidLoad(beerId: beerId)
@@ -57,9 +60,10 @@ class BeerDetailViewController: UIViewController {
         ])
     }
     
-    @objc fileprivate func handleBackToBeers() {
-        viewModel.backToBeersList()
-    }
+//    @objc func handleBackToBeers() {
+//        viewModel.backToBeersList()
+//        print("Hasta aquí bien")
+//    }
 }
 
 extension BeerDetailViewController: UITableViewDataSource {
